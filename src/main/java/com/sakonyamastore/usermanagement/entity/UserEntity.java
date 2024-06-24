@@ -1,16 +1,17 @@
 package com.sakonyamastore.usermanagement.entity;
 
-//import com.vladmihalcea.hibernate.type.json.JsonBinaryType;
-import jakarta.persistence.*;
+
 import lombok.Data;
 
-        import java.io.Serializable;
+import javax.persistence.*;
+import java.io.Serializable;
 
 @Entity
 @Table(name = "user_table")
 @Data
 //@Convert(attributeName = "address", converter = JsonBinaryType.class)
 public class UserEntity implements Serializable {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;

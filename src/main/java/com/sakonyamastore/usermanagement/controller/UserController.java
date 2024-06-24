@@ -2,11 +2,12 @@ package com.sakonyamastore.usermanagement.controller;
 
 import com.sakonyamastore.usermanagement.dto.UserDto;
 import com.sakonyamastore.usermanagement.service.UserService;
-import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+
+import javax.validation.Valid;
 
 @RestController
 @RequestMapping(value = "/user")

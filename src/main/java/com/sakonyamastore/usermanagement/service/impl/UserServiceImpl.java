@@ -8,10 +8,11 @@ import com.sakonyamastore.usermanagement.dto.UserDto;
 import com.sakonyamastore.usermanagement.entity.UserEntity;
 import com.sakonyamastore.usermanagement.repository.UserRepository;
 import com.sakonyamastore.usermanagement.service.UserService;
-import jakarta.transaction.Transactional;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import javax.transaction.Transactional;
 import java.nio.charset.StandardCharsets;
 import java.util.Base64;
 import java.util.Optional;

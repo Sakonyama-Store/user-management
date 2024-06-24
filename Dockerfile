@@ -8,9 +8,9 @@ RUN mvn clean install -DskipTests
 # Stage 2: Run the application
 FROM openjdk:11-jre-slim
 WORKDIR /app
-COPY --from=build /app/target/product-app-0.0.1-SNAPSHOT.jar /app/product-app-0.0.1-SNAPSHOT.jar
+COPY --from=build /app/target/usermanagement-0.0.1-SNAPSHOT.jar /app/usermanagement-0.0.1-SNAPSHOT.jar
 EXPOSE 8080
-CMD ["java", "-jar", "Product-App-0.0.1-SNAPSHOT.jar"]
+CMD ["java", "-jar", "usermanagement-0.0.1-SNAPSHOT.jar"]
 
 
 
